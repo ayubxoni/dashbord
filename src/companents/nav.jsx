@@ -2,14 +2,14 @@ import React from 'react'
 import '../css/header/nav.css'
 export default function nav(props) {
   return (
-    <>
-<div className=' d-flex  nav justify-content-between container-fluid align-items-center shadow-sm p-3 mb-5'>
+    
+<div className=' d-flex  nav justify-content-between container-fluid align-items-center shadow-sm'>
     <div className='w-25 d-flex brand'>
-        <img  className='img-fluid' width="25px"  src={props.data.brand} alt="" />
-        <h4 className='mt-1 ms-2'>{props.data.brandh2}</h4>
+        <img  className='img-fluid mb-2' width="25px"  src={props.data.brand} alt="" />
+        <h4 className=' ms-2'>{props.data.brandh2}</h4>
     </div>
     
-    <div className='d-flex w-75'>
+    <div className='d-flex w-75 nav1'>
 <form className='form rounded' action="">
     <input type="text" />
     <i className="fa-solid fa-magnifying-glass"></i>
@@ -33,7 +33,5 @@ export default function nav(props) {
 </ul>
     </div>
 </div>
-
-    </>
   )
 }
